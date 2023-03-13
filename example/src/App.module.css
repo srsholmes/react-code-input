@@ -1,0 +1,24 @@
+.app {
+  padding: 5rem;;
+  width: 90%;
+  margin: auto;
+}
+
+.select {
+  margin-top: 1rem;
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.5em 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: rgb(46, 52, 64);
+  color: rgb(255, 255, 255);
+}
+
+/* Original CSS written by Oliver Geer (WebCoder49) */
+/* https://css-tricks.com/creating-an-editable-textarea-that-supports-syntax-highlighted-code/ */
+/* Updated for solid-code-input */
