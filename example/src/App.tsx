@@ -4,7 +4,7 @@ import Prism from 'prismjs';
 import './themes/nord-highlight.css';
 import './themes/nord-prism.css';
 import styles from './App.module.css';
-import CodeInput from './CodeInput/CodeInput';
+import { CodeInput } from '../../dist/esm';
 import { useEffect, useState } from 'react';
 
 // Syntax Highlight libraries to generate the tokens.
@@ -44,11 +44,7 @@ function App() {
 
 ReactDOM
   .createRoot(document.getElementById('root') as HTMLElement)
-  .render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-  )
+  .render(<App />)
 `;
 
 export function App() {
