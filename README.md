@@ -1,5 +1,10 @@
 # React Code Input
 
+
+
+https://user-images.githubusercontent.com/3579905/224825746-d315f374-85c6-4320-80e5-73a553949000.mp4
+
+
 React Code Input is a small component for ReactJS that allows you to create a lightweight text area component which will automatically syntax highlight the code you type in it. It is designed for basic use cases where you want to display code to the user, and allow them to edit it, without all the overhead of a full blown code editor.
 
 It supports both [PrismJS](https://prismjs.com/) and [HighlightJS](https://highlightjs.org/) to do the syntax highlighting, and will use either depending on which library you pass in as a prop.
