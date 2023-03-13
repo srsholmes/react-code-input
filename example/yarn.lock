@@ -112,6 +112,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz#c5a1a4bfe1b57f0c3e61b29883525c6da3e5c091"
   integrity sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q==
 
+"@srsholmes/react-code-input@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@srsholmes/react-code-input/-/react-code-input-0.0.3.tgz#d802b9beec0dfd93d13be2aee8a794039484743f"
+  integrity sha512-wha1mi091g5EIfwwgNHmWYXcKvK0xX6HmICnU1lPPvCUiVQhk8tNvXTIxwQtGGjtkiEFJThe/dCVuMVv4bp71Q==
+
 "@swc/core-darwin-arm64@1.3.38":
   version "1.3.38"
   resolved "https://registry.npmjs.org/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.38.tgz"

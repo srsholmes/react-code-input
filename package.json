@@ -1,10 +1,18 @@
 {
   "name": "@srsholmes/react-code-input",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/react-code-input"
+  "version": "0.0.3",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "browser": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "node": "./dist/cjs/index.js"
+    }
   },
-  "version": "0.1.0",
-  "description": "A simple template for a custom React component library",
+  "description": "Simple Code Input with syntax highlighting for React JS",
   "scripts": {
     "rollup": "rollup -c"
   },
@@ -15,8 +23,25 @@
     "react-dom": "^18.2.0"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "trailingComma": "all"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/srsholmes/react-code-input/issues"
+  },
+  "keywords": [
+    "reactjs",
+    "react",
+    "code",
+    "input",
+    "highlight",
+    "prismjs",
+    "highlightjs"
+  ],
   "devDependencies": {
     "prettier": "^2.8.4",
     "postcss": "8.4.21",
@@ -50,10 +75,7 @@
     "style-loader": "^3.3.1",
     "typescript": "^4.7.4"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
   "files": [
     "dist"
-  ],
-  "types": "dist/index.d.ts"
+  ]
 }

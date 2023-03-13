@@ -6,7 +6,9 @@ import './themes/nord-prism.css';
 import styles from './App.module.css';
 import './App.css';
 import { CodeInput } from '../../dist/esm';
+
 import { useEffect, useState } from 'react';
+// import { CodeInput } from '@srsholmes/react-code-input';
 
 // Syntax Highlight libraries to generate the tokens.
 //  It's up to you to import them.
@@ -77,7 +79,7 @@ export function App() {
     if (!loadedPrism) return;
     // return;
     // sleep 5 seconds to load
-    // return;
+    return;
     new Promise((resolve) => setTimeout(resolve, 5000)).then(async () => {
       setInterval(async () => {
         const oldStyle = document.getElementById('theme');
