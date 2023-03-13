@@ -4,6 +4,7 @@ import Prism from 'prismjs';
 import './themes/nord-highlight.css';
 import './themes/nord-prism.css';
 import styles from './App.module.css';
+import './App.css';
 import { CodeInput } from '../../dist/esm';
 import { useEffect, useState } from 'react';
 
@@ -64,7 +65,6 @@ export function App() {
   const [loadedPrism, setLoadedPrism] = useState(false);
   const [loadedHighlight, setLoadedHighlight] = useState(true);
   const [languagePrism, setLanguagePrism] = useState('jsx');
-  const [languageHighlight, setLanguageHighlight] = useState('typescript');
 
   useEffect(() => {
     Promise.all(libs).then(() => {
@@ -77,7 +77,8 @@ export function App() {
     if (!loadedPrism) return;
     // return;
     // sleep 5 seconds to load
-    new Promise((resolve) => setTimeout(resolve, 1000)).then(async () => {
+    // return;
+    new Promise((resolve) => setTimeout(resolve, 5000)).then(async () => {
       setInterval(async () => {
         const oldStyle = document.getElementById('theme');
         if (oldStyle) {
@@ -98,41 +99,17 @@ export function App() {
 
   return (
     <div className={styles.app}>
-      <h1 className={styles.heading}>React Code Input Demo</h1>
-      <div>
-        <h2>PrismJS</h2>
-        {loadedPrism ? (
-          <CodeInput
-            autoHeight={true}
-            resize="both"
-            placeholder="Input your code here..."
-            prismJS={Prism}
-            onChange={setInput}
-            value={input}
-            language={languagePrism}
-          />
-        ) : null}
-
-        <LanguageSelect setLanguage={setLanguagePrism} value={languagePrism} />
-      </div>
-      <div>
-        <h2>Highlight.js</h2>
-        {loadedHighlight ? (
-          <CodeInput
-            autoHeight={true}
-            resize="both"
-            placeholder="Input your code here..."
-            highlightjs={highlightjs}
-            onChange={setInput}
-            value={input}
-            language={languageHighlight}
-          />
-        ) : null}
-        <LanguageSelect
-          setLanguage={setLanguageHighlight}
-          value={languageHighlight}
+      {loadedPrism ? (
+        <CodeInput
+          autoHeight={true}
+          resize="both"
+          placeholder="Input your code here..."
+          prismJS={Prism}
+          onChange={setInput}
+          value={input}
+          language={languagePrism}
         />
-      </div>
+      ) : null}
     </div>
   );
 
