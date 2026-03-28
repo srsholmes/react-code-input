@@ -14,13 +14,16 @@
   },
   "description": "Simple Code Input with syntax highlighting for React JS",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c rollup.config.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
   },
   "author": "Simon Holmes",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
   },
   "prettier": {
     "singleQuote": true,
@@ -43,37 +46,29 @@
     "highlightjs"
   ],
   "devDependencies": {
-    "prettier": "^2.8.4",
-    "postcss": "8.4.21",
-    "rollup-plugin-postcss": "4.0.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "@playwright/test": "^1.58.2",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.0.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/highlight.js": "9.12.2",
     "@types/prismjs": "1.26.0",
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
-    "@babel/preset-typescript": "^7.16.0",
-    "@mdx-js/react": "^2.1.2",
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.6",
-    "@rollup/plugin-typescript": "^8.3.0",
-    "@testing-library/react": "^13.3.0",
-    "@types/jest": "^28.1.6",
-    "@types/react": "^18.0.15",
-    "babel-jest": "^27.3.1",
-    "babel-loader": "^8.2.3",
-    "css-loader": "^6.5.1",
-    "html-webpack-plugin": "^5.5.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^28.1.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "rollup": "^2.60.0",
-    "rollup-plugin-dts": "^4.0.1",
-    "sass": "^1.43.5",
-    "sass-loader": "^12.3.0",
-    "style-loader": "^3.3.1",
-    "typescript": "^4.7.4"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "jsdom": "^29.0.1",
+    "postcss": "^8.4.38",
+    "prettier": "^3.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-dts": "^6.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "4.0.2",
+    "tslib": "^2.6.0",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.2"
   },
   "files": [
     "dist"

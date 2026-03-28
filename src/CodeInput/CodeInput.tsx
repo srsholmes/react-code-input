@@ -1,15 +1,9 @@
-import React, {
-  ChangeEvent,
-  KeyboardEvent,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { type KeyboardEvent, useEffect, useRef, useState } from 'react';
 import styles from './styles.module.css';
 import { CodeInputProps } from '../types';
 import { handleEnterKey, handleTabKey } from '../utils';
 
-export const CodeInput: React.FC<CodeInputProps> = (props) => {
+export const CodeInput = (props: CodeInputProps) => {
   let preElement = useRef<HTMLPreElement>(null);
   let textAreaElement = useRef<HTMLTextAreaElement>(null);
   let wrapperElement = useRef<HTMLDivElement>(null);
@@ -149,8 +143,8 @@ export const CodeInput: React.FC<CodeInputProps> = (props) => {
     }
   }
 
-  async function handleInput(e: ChangeEvent<HTMLTextAreaElement>) {
-    props.onChange((e.target as HTMLTextAreaElement).value);
+  function handleInput(e: React.FormEvent<HTMLTextAreaElement>) {
+    props.onChange(e.currentTarget.value);
   }
 
   function handleMouseDown() {

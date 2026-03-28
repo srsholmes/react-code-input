@@ -1,10 +1,10 @@
 /* Original Code written by Oliver Geer (WebCoder49) */
 // https://github.com/WebCoder49/code-input/blob/main/plugins/indent.js
 
-import React from 'react';
+import type { KeyboardEvent } from 'react';
 
 export function handleTabKey(
-  event: React.KeyboardEvent<HTMLTextAreaElement>,
+  event: KeyboardEvent<HTMLTextAreaElement>,
   input_element: HTMLTextAreaElement,
   code: string
 ) {
@@ -67,7 +67,7 @@ export function handleTabKey(
 }
 
 export function handleEnterKey(
-  event: React.KeyboardEvent<HTMLTextAreaElement>,
+  event: KeyboardEvent<HTMLTextAreaElement>,
   input_element: HTMLTextAreaElement
 ) {
   event.preventDefault();

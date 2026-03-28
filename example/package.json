@@ -12,20 +12,19 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@srsholmes/react-code-input": "^0.0.3",
     "highlight.js": "^11.7.0",
     "prismjs": "^1.29.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/highlight.js": "9.12.2",
     "@types/prismjs": "1.26.0",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react-swc": "^3.0.0",
-    "prettier": "^2.8.4",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react-swc": "^4.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.5.0",
+    "vite": "^6.0.0"
   }
 }

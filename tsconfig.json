@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     // Default
-    "target": "es5",
+    "target": "es2018",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
 
     // Added
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "types",
