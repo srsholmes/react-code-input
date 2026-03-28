@@ -18,5 +18,5 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
   },
-  "exclude": ["example"]
+  "exclude": ["example", "e2e", "playwright.config.ts", "vitest.config.ts"]
 }
